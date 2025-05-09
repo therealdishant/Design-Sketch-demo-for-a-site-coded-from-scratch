@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Wireframes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+
+        .wireframe-container {
+            background: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .wireframe {
+            border: 2px solid #333;
+            margin: 20px 0;
+            padding: 20px;
+            background: white;
+        }
+
+        .header {
+            border: 2px solid #333;
+            padding: 15px;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .logo {
+            border: 2px solid #333;
+            padding: 10px;
+            width: 150px;
+            text-align: center;
+        }
+
+        .nav {
+            border: 2px solid #333;
+            padding: 10px;
+            width: 300px;
+            text-align: center;
+        }
+
+        .hero {
+            border: 2px solid #333;
+            padding: 40px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .content-section {
+            border: 2px solid #333;
+            padding: 40px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .sidebar {
+            border: 2px solid #333;
+            padding: 40px;
+            width: 250px;
+            text-align: center;
+        }
+
+        .footer {
+            border: 2px solid #333;
+            padding: 15px;
+            text-align: center;
+        }
+
+        /* Desktop Layout */
+        .desktop-layout {
+            display: flex;
+            gap: 20px;
+        }
+
+        .desktop-main {
+            flex: 2;
+        }
+
+        .desktop-sidebar {
+            flex: 1;
+        }
+
+        /* Mobile Layout */
+        .mobile-layout .header {
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .mobile-layout .logo,
+        .mobile-layout .nav {
+            width: 100%;
+        }
+
+        .mobile-layout .sidebar {
+            display: none;
+        }
+
+        h2 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .view-label {
+            background: #333;
+            color: white;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Website Wireframes</h1>
+
+    <!-- Desktop View -->
+    <div class="wireframe-container">
+        <div class="view-label">Desktop View (800px and above)</div>
+        <div class="wireframe">
+            <div class="header">
+                <div class="logo">Logo</div>
+                <div class="nav">Navigation</div>
+            </div>
+            <div class="desktop-layout">
+                <div class="desktop-main">
+                    <div class="hero">Hero Section</div>
+                    <div class="content-section">Content Section</div>
+                </div>
+                <div class="desktop-sidebar">
+                    <div class="sidebar">Sidebar</div>
+                </div>
+            </div>
+            <div class="footer">Footer</div>
+        </div>
+    </div>
+
+    <!-- Mobile View -->
+    <div class="wireframe-container">
+        <div class="view-label">Mobile View (below 800px)</div>
+        <div class="wireframe mobile-layout">
+            <div class="header">
+                <div class="logo">Logo</div>
+                <div class="nav">Navigation</div>
+            </div>
+            <div class="hero">Hero Section</div>
+            <div class="content-section">Content Section</div>
+            <div class="footer">Footer</div>
+        </div>
+    </div>
+</body>
+</html> 
