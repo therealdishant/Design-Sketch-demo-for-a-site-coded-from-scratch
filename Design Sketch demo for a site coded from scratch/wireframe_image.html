@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Wireframe Sketches</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px;
+            background: white;
+        }
+
+        .sketch-container {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .sketch {
+            border: 3px solid black;
+            padding: 20px;
+            background: white;
+        }
+
+        .sketch-label {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .header {
+            border: 2px solid black;
+            padding: 15px;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .logo {
+            border: 2px solid black;
+            padding: 10px;
+            width: 120px;
+            text-align: center;
+        }
+
+        .nav {
+            border: 2px solid black;
+            padding: 10px;
+            width: 250px;
+            text-align: center;
+        }
+
+        .hero {
+            border: 2px solid black;
+            padding: 30px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .content {
+            border: 2px solid black;
+            padding: 30px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .sidebar {
+            border: 2px solid black;
+            padding: 30px;
+            width: 200px;
+            text-align: center;
+        }
+
+        .footer {
+            border: 2px solid black;
+            padding: 15px;
+            text-align: center;
+        }
+
+        /* Desktop Layout */
+        .desktop-layout {
+            display: flex;
+            gap: 20px;
+        }
+
+        .desktop-main {
+            flex: 2;
+        }
+
+        .desktop-sidebar {
+            flex: 1;
+        }
+
+        /* Mobile Layout */
+        .mobile-layout .header {
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .mobile-layout .logo,
+        .mobile-layout .nav {
+            width: 100%;
+        }
+
+        .mobile-layout .sidebar {
+            display: none;
+        }
+
+        .writeup {
+            border-top: 2px solid black;
+            padding-top: 20px;
+            margin-top: 40px;
+        }
+
+        .writeup h2 {
+            margin-bottom: 15px;
+        }
+
+        .writeup p {
+            margin-bottom: 10px;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center; margin-bottom: 40px;">Website Design Sketches</h1>
+
+    <div class="sketch-container">
+        <!-- Desktop View -->
+        <div class="sketch">
+            <div class="sketch-label">Desktop View (800px and above)</div>
+            <div class="header">
+                <div class="logo">Logo</div>
+                <div class="nav">Navigation Menu</div>
+            </div>
+            <div class="desktop-layout">
+                <div class="desktop-main">
+                    <div class="hero">Hero Section<br>Main Message & Call to Action</div>
+                    <div class="content">Main Content Area<br>Articles, Products, or Services</div>
+                </div>
+                <div class="desktop-sidebar">
+                    <div class="sidebar">Sidebar<br>Additional Info & Links</div>
+                </div>
+            </div>
+            <div class="footer">Footer<br>Contact Info & Social Links</div>
+        </div>
+
+        <!-- Mobile View -->
+        <div class="sketch">
+            <div class="sketch-label">Mobile View (below 800px)</div>
+            <div class="sketch mobile-layout">
+                <div class="header">
+                    <div class="logo">Logo</div>
+                    <div class="nav">Navigation Menu</div>
+                </div>
+                <div class="hero">Hero Section<br>Main Message & Call to Action</div>
+                <div class="content">Main Content Area<br>Articles, Products, or Services</div>
+                <div class="footer">Footer<br>Contact Info & Social Links</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="writeup">
+        <h2>Design Write-up</h2>
+        <p><strong>Layout Structure:</strong> The website features a responsive design with two distinct views optimized for different screen sizes. The desktop view (800px and above) utilizes a two-column layout with a main content area and sidebar, while the mobile view (below 800px) employs a single-column layout for better readability on smaller screens.</p>
+        
+        <p><strong>Key Features:</strong></p>
+        <ul>
+            <li>Clean, minimalist design focusing on content hierarchy</li>
+            <li>Responsive navigation that adapts to screen size</li>
+            <li>Prominent hero section for main messaging</li>
+            <li>Flexible content area that adjusts to available space</li>
+            <li>Sidebar that's visible on desktop but hidden on mobile</li>
+        </ul>
+
+        <p><strong>Design Principles:</strong></p>
+        <ul>
+            <li>Black and white wireframes for clear visualization</li>
+            <li>Clear visual hierarchy and content organization</li>
+            <li>Responsive design that maintains usability across devices</li>
+            <li>Focus on content and functionality over decorative elements</li>
+            <li>Consistent spacing and alignment throughout</li>
+        </ul>
+    </div>
+</body>
+</html> 
